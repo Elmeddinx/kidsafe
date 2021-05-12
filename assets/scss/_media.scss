@@ -1,0 +1,36 @@
+@media only screen and (max-width: 768px) {
+    nav {
+        .registiration-btn {
+            li:nth-child(1) {
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+    header {
+        .carousel {
+            .carousel-inner {
+                .header-row {
+                    padding-left: 2.5rem;
+                    .col-5 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    section.parallax {
+        .row {
+            flex-direction: column;
+            .btn {
+                margin: 1rem 0 !important;
+            }
+        }
+    }
+    footer {
+        .row {
+            .col-sm-12,.dropdown {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

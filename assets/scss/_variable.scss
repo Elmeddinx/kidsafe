@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+body,html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+$primary_color: #ffffff;
+$secondary_color: #5c23d9;
+$primary_btn_color: #f2a922;
+$primary_btn_hover: #fca401;
+$secondary_btn-color: #01ffe6;
+$secondary_btn-hover: #04d9c4;
+
+.bg-primary {
+    background: rgb(92, 35, 217);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(92, 35, 217, 1) 0%,
+        rgba(106, 102, 242, 1) 60%,
+        rgba(4, 217, 196, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(92, 35, 217, 1) 0%,
+        rgba(106, 102, 242, 1) 60%,
+        rgba(4, 217, 196, 1) 100%
+    );
+    background: linear-gradient(90deg, rgba(92, 35, 217, 1) 0%, rgba(106, 102, 242, 1) 60%, rgba(4, 217, 196, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c23d9",endColorstr="#04d9c4",GradientType=1);
+}
+.btn-primary {
+    background: $primary_btn_color;
+    border: none;
+    &:hover {
+        background: $primary_btn_hover;
+    }
+}
+.btn-outline-secondary {
+    border: 1px solid $secondary_color;
+    &:hover {
+        background: $secondary_color;
+    }
+}
+@mixin box_shadow {
+    box-shadow: 1px 1px 5px $secondary_color;    
+}
+.box_shadow {
+     filter: drop-shadow(1px 1px 10px $secondary_color);
+}
+.box_shadow_light {
+    filter: drop-shadow(1px 1px 5px rgb(139, 139, 139));
+}
+.shadow {
+    @include box_shadow();
+}

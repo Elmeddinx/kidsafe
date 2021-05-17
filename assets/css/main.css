@@ -166,6 +166,18 @@ section.parallax .parallax-overlay {
   background: rgba(0, 0, 0, 0.6);
 }
 
+section.parallax .parallax-overlay .row a {
+  width: 15rem;
+}
+
+header.blogs .card-img-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tags {
+  gap: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   nav .registiration-btn li:nth-child(1) {
     margin-bottom: 1rem !important;

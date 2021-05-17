@@ -5,6 +5,11 @@ section.parallax {
     background-attachment: fixed;
     .parallax-overlay {
         background: rgba(0,0,0,0.6);
+        .row {
+            a {
+                width: 15rem;
+            }
+        }
     }
     
 }
